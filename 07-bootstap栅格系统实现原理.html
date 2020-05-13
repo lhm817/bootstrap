@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hello, world!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+
+        .row{
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .col{
+            flex-grow:1;
+        }
+        .col-6{
+            flex: 50%;
+            max-width: 50%;
+        }
+
+        .col-4{
+            flex: 33.3333%;
+            max-width: 33.3333%;
+        }
+
+        .container{
+            height: 100px;
+            background-color: orangered;
+        }
+        .container .row{
+            height: 100px;
+            background-color: deepskyblue;
+            margin-bottom: 20px;
+        }
+        .row>div:nth-child(1){
+            background-color: pink;
+        }
+        .row>div:nth-child(2){
+            background-color: orange;
+        }
+        .row>div:nth-child(3){
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!--默认情况下所有列的宽度是等分所在行的宽度-->
+    <span class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </span>
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-4"></div>
+        <div class="col"></div>
+    </div>
+    <!--如果行中内容的宽度超过了12分， 那么将自动换行-->
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-4"></div>
+        <div class="col-6"></div>
+        <div class="col-8"></div>
+    </div>
+</div>
+</body>
+</html>
