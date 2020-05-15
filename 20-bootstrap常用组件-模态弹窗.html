@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="js/bootstrap4/css/bootstrap.css">
+
+</head>
+<body>
+
+<!--
+data toggle= modal :告诉bootstrap需要切换的是模态弹窗
+2. deta-targct- texplMldal"告诉bootstrap而费切换的是哪个模态弹窗
+
+-->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<!--
+class
+nodal fade
+创建梭态弹窗的容器
+
+-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+    <!--
+    I. class- ”modal-dialog": 创建真正弹出的内容
+    -->
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>这里是段落1</p>
+                <p>这里是段落2</p>
+                <p>这里是段落3</p>
+                <p>这里是段落4</p>
+                <p>这里是段落5</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="js/jquery-3.4.1/jquery-3.4.1.js"></script>
+<!-- bootstrap 4 中多数弹窗都依赖于poper -->
+<script src="js/popper/popper.min.js"></script>
+<script src="js/bootstrap4/js/bootstrap.js"></script>
+</body>
+</html>
