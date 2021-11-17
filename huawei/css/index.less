@@ -70,13 +70,27 @@ a{
     background: #fff;
     .nav-main{
 
-      .nav{
+      .navbar{
         font-size: 16px;
         ul{
           li{
+            animation: all 3s linear;
             &:hover{
-              border-bottom: 1px solid;
+              &::after{
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 90%;
+                background: #000;
+                bottom: 0;
+                left: 0;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+              }
             }
+          }
+          &.left-navbar{
+            font-weight: bolder;
           }
         }
       }
