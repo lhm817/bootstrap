@@ -69,29 +69,36 @@ a{
     height: 60px;
     background: #fff;
     .nav-main{
-
+      a.logo{
+        line-height: 60px;
+      }
       .navbar{
         font-size: 16px;
         ul{
           li{
-            animation: all 3s linear;
+            position: relative;
+            color: #000;
+            &::after{
+              content: '';
+              position: absolute;
+              height: 2px;
+              width: 0%;
+              background: #000;
+              bottom: 0;
+              left: 50%;
+              transition: all .3s;
+            }
             &:hover{
               &::after{
-                content: '';
-                position: absolute;
-                height: 2px;
-                width: 90%;
-                background: #000;
-                bottom: 0;
-                left: 0;
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
+                width: 60%;
+                left: 20%;
               }
             }
+            &.left-navbar{
+              font-weight: bolder;
+            }
           }
-          &.left-navbar{
-            font-weight: bolder;
-          }
+
         }
       }
     }
